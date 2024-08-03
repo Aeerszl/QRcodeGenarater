@@ -1,4 +1,5 @@
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +9,8 @@
 
 body {
 	text-align: center;
-	background: linear-gradient(135deg, #a1e1d8, #31cecb,#0695bc,#131633); /* Yüksek açıyla iki renk geçişi */
+	background: linear-gradient(to left, rgb(9, 194, 138), rgb(51, 77, 222), rgb(3, 181, 241), rgba(91, 68, 166, 0.347));
+	/* Yüksek açıyla iki renk geçişi */
 	color: #250b51;
   }
   
