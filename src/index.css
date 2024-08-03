@@ -1,0 +1,81 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	text-align: center;
+	background: linear-gradient(135deg, #a1e1d8, #31cecb,#0695bc,#131633); /* Yüksek açıyla iki renk geçişi */
+	color: #250b51;
+  }
+  
+img {
+	display: block;
+	max-width: 100%; /* Resmin genişliğinin kapsayıcıyı aşmamasını sağlar */
+	height: auto; /* Oranları koruyarak yüksekliği ayarlar */
+	margin: 2rem auto;
+  }
+  
+  /* Büyük ekranlar için */
+  @media (min-width: 1024px) {
+	img {
+	  width: 390px; /* Geniş ekranlarda sabit genişlik */
+	  height: 390px;
+	}
+  }
+  
+  /* Orta büyüklükte ekranlar için */
+  @media (min-width: 768px) and (max-width: 1023px) {
+	img {
+	  width: 360px; /* Orta ekranlarda daha küçük genişlik */
+	  height: 360px;
+	}
+  }
+  
+  /* Küçük ekranlar için */
+  @media (max-width: 767px) {
+	img {
+	  width: 100%; /* Küçük ekranlarda tam genişlik */
+	  height: auto; /* Yüksekliği otomatik ayarla */
+	  margin: 1rem auto; /* Margin değerlerini küçült */
+	}
+  }
+  
+
+.app {
+	padding: 2rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+input {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: #EEE;
+	width: 100%;
+	max-width: 320px;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	margin-right: 1rem;
+}
+
+button, a {
+    appearance: none;
+    outline: none;
+    border: 2px solid #111565; /* Çerçevenin kalınlığı ve rengi */
+    background-color: #ffffff; /* Beyaz arka plan */
+    cursor: pointer;
+
+    color: #078db2;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 8px 16px; /* İç boşluk ekleyerek çerçeve ile metin arasında boşluk bırakılır */
+    border-radius: 4px; /* Köşeleri yuvarlamak için */
+}
